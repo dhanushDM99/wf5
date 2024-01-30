@@ -1,8 +1,7 @@
-name: HelloWorldWorkflow
 on:
-  push:
+  github:
     branches:
-      - main
+      only: main
 jobs:
   HelloWorld:
     runs-on: ubuntu-latest
