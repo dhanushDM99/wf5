@@ -1,0 +1,16 @@
+on:
+  github:
+    branches:
+      only: main
+
+version: "1.0"
+
+workflows:
+  hello_workflow:
+    jobs:
+      - name: hello_job
+        steps:
+          - name: run_hello_script
+            action:
+              type: code
+              script: hello.py
