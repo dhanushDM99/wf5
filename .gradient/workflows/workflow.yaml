@@ -1,7 +1,7 @@
 on:
-  github:
+  push:
     branches:
-      only: main
+      - main
 jobs:
   HelloWorld:
     runs-on: ubuntu-latest
