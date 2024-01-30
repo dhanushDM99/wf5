@@ -1,9 +1,9 @@
 version: "1.0"
 
-on:
-  github:
-    branches:
-      only: main
+# on:
+#   github:
+#     branches:
+#       only: main
 
 workflows:
   hello_workflow:
