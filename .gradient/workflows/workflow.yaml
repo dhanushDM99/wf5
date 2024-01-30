@@ -1,11 +1,10 @@
-version: "1.0"
-
-workflows:
-  hello_workflow:
-    jobs:
-      - name: hello_job
-        steps:
-          - name: run_hello_script
-            action:
-              type: code
-              script: hello.py
+ on:
+  push:
+    branches:
+      - main
+jobs:
+  HelloWorld:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
